@@ -63,9 +63,6 @@ flask run
 ##✅ Unit Tests
 Run all unit tests using:
 
-bash
-Copy
-Edit
 python -m unittest discover tests
 
 🧪 Selenium Tests
