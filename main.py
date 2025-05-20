@@ -1020,10 +1020,10 @@ class UserManagementDialog(QtWidgets.QDialog):
             )       
         def is_valid_email(email):
             return re.match(r"^[\w\.-]+@[\w\.-]+\.\w+$", email)
-        u = sanitize_input(self.username_input.text().strip())
+        u = self.username_input.text().strip()
         p = self.password_input.text()
         r = self.role_combo.currentText()
-        e = sanitize_input(self.email_input.text().strip())
+        e = self.email_input.text().strip()
         if not u or not p:
             QtWidgets.QMessageBox.warning(self, "Input Error", "Please fill username and password.")
             return
